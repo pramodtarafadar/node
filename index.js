@@ -32,8 +32,5 @@ const initializeDBAndServer = async () => {
 initializeDBAndServer();
 
 app.get("/", async(req, res) => {
-    const query = `
-    SELECT * FROM users;`
-    const result = await db.all(query)
-    res.send(result)
+    console.log("Hii")
 })
