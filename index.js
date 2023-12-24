@@ -8,7 +8,7 @@ const sqlite3 = require("sqlite3");
 const app = express();
 app.use(express.json())
 
-const dbPath = path.join(__dirname, "demo.db");
+const dbPath = path.join(__dirname, "demo.db")
 
 let db = null;
 
@@ -30,7 +30,3 @@ const initializeDBAndServer = async () => {
 };
 
 initializeDBAndServer();
-
-app.get("/", async(req, res) => {
-    res.send("hello world")
-})
